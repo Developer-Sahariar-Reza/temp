@@ -1,0 +1,201 @@
+/* Google Font Manrope import */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap");
+
+/* Tailwind CSS Directive */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Common CSS For All */
+* {
+  font-family: "Manrope", sans-serif;
+}
+.container {
+  @apply w-3/4 mx-auto;
+}
+.text-primary {
+  @apply text-teal-600;
+}
+.text-secondary {
+  @apply text-[#122071];
+}
+.common-button {
+  @apply bg-teal-600 hover:bg-[#122071] text-white text-lg rounded-lg px-3 py-2;
+}
+
+/* root  */
+.root {
+  @apply flex flex-col;
+}
+/* Header Component Design Start */
+.header-container {
+  @apply flex justify-evenly items-center pt-5 lg:pb-10;
+}
+
+/* logo container  */
+.logo-container a {
+  @apply flex justify-center items-center;
+}
+.logo-container a img {
+  @apply w-10 h-10 mr-2;
+}
+.logo-container a h3 {
+  @apply font-extrabold text-xl lg:text-3xl text-primary;
+}
+
+/* menu container  */
+.menu-container nav ul {
+  @apply flex flex-col lg:flex-row justify-center items-center absolute lg:static;
+}
+.menu-container nav ul li {
+  @apply mr-0 lg:mr-5 mb-2 lg:mb-0;
+}
+.active {
+  @apply text-primary font-extrabold text-2xl underline;
+}
+.not-active {
+  @apply text-secondary font-extrabold text-2xl;
+}
+.responsive-position-1 {
+  @apply top-20 right-28 md:right-72 duration-500;
+}
+.responsive-position-2 {
+  @apply -top-60 right-28 duration-500;
+}
+
+/* nav-button-container */
+.nav-button-container {
+  @apply hidden lg:block;
+}
+
+/* Footer Component Start  */
+.footer {
+  @apply bg-black w-full h-full lg:h-[500px] static;
+}
+.footer-container {
+  @apply py-8 divide-y-2;
+}
+.footer-info-container {
+  @apply grid grid-cols-1 lg:grid-cols-5 gap-10 text-gray-400 justify-center;
+}
+.career-text {
+  @apply mt-8 flex lg:flex-none flex-col justify-center lg:justify-start items-center lg:items-start;
+}
+.career-text h3 {
+  @apply text-xl md:text-2xl font-extrabold mb-3;
+}
+.career-text h4 {
+  @apply text-xl lg:text-2xl  font-extrabold mb-3;
+}
+.career-text p {
+  @apply text-lg font-extrabold mb-4 cursor-pointer;
+}
+.career-text img {
+  @apply mb-6;
+}
+.footer-copyright {
+  @apply text-gray-400 flex flex-col md:flex-row justify-between pt-5;
+}
+.footer-copyright span {
+  @apply mb-3 md:mb-0;
+}
+
+/* Error Page Component Design */
+.error-animation {
+  @apply w-3/4 lg:w-1/4 mx-auto mt-20 mb-8;
+}
+.error-message-container,
+.error-button-container {
+  @apply flex flex-col justify-center items-center mb-7;
+}
+.error-message-container span {
+  @apply text-primary text-lg md:text-3xl font-extrabold;
+}
+
+/* Home Component Design  */
+.home {
+  @apply mt-48 lg:mt-0;
+}
+
+/* Hero Component Design  */
+.hero {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-8 justify-between items-center;
+}
+.hero-info h1 {
+  @apply text-5xl font-extrabold mb-5;
+}
+.hero-h1 {
+  @apply text-primary;
+}
+.hero-info p {
+  @apply text-secondary font-extrabold mb-5;
+}
+
+/* Job Category Component Design  */
+.job-category {
+  @apply container my-12;
+}
+.job-headline {
+  @apply font-extrabold text-center text-2xl md:text-4xl mb-5 text-primary;
+}
+.job-subtitle {
+  @apply font-medium text-center text-base md:text-lg mb-5 text-secondary;
+}
+.job-category-container {
+  @apply mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8;
+}
+.job-category-box {
+  @apply border rounded-lg p-5 flex flex-col justify-center items-center;
+}
+.job-category-box img {
+  @apply w-3/4 mb-5;
+}
+.job-category-box div h3 {
+  @apply text-xl font-extrabold mb-4;
+}
+.job-category-box div p {
+  @apply text-lg font-medium mb-4;
+}
+
+/* Featured Jobs Component Design */
+.featured-jobs {
+  @apply container my-12;
+}
+.featured-headline {
+  @apply font-extrabold text-center text-2xl md:text-4xl mb-5 text-primary;
+}
+.featured-subtitle {
+  @apply font-medium text-center text-base md:text-lg mb-5 text-secondary;
+}
+.featured-jobs-container {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-8;
+}
+.see-all-jobs-button-container {
+  @apply flex justify-center items-center mx-auto mt-12 mb-6;
+}
+
+/* FeaturedJobsCard Component Design */
+.feature-jobs-box {
+  @apply border rounded-lg p-5;
+}
+.feature-jobs-box img {
+  @apply w-1/2 mb-5;
+}
+.f-job-title {
+  @apply text-xl font-extrabold mb-4;
+}
+.f-job-company {
+  @apply text-lg font-medium mb-5;
+}
+.f-job-container {
+  @apply flex justify-between items-center mb-5;
+}
+.f-job-container p {
+  @apply border border-teal-600 rounded-lg text-primary px-2 py-2;
+}
+.f-job-container2 {
+  @apply flex flex-col lg:flex-row justify-center lg:justify-between items-center mb-6;
+}
+.f-job-container2 p {
+  @apply flex justify-center items-center text-lg text-secondary mb-3 lg:mb-0;
+}
